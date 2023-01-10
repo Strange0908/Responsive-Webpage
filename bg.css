@@ -1,0 +1,217 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/ParallaxImg/t&j.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.logo
+{
+    margin-bottom: 50px;
+    margin-left: 19px;
+    width: 150px;
+    cursor: pointer;
+}
+.navbar
+{
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+button
+{
+    text-align: center;
+    margin-bottom: 10%;
+    margin-left: 78%;
+    color: black;
+    padding: 10px 25px;
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.content
+{
+    color: rgb(255, 42, 0);
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.side-bar
+{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(white,rgb(111, 96, 96));
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu
+{
+    display: block;
+    width: 50px;
+    margin: 7px auto 0;
+    cursor: pointer;
+}
+.social-links img, .useful-links img
+{
+    width: 30px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.social-links
+{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.useful-links
+{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+.heart img
+{
+    width: 50px;
+    animation: heart 7s linear infinite;
+}
+.heart
+{
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70;
+}
+@keyframes heart {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 01;
+    }
+    70%{
+        opacity: 01;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+    
+}
+.heart img:nth-child(1)
+{
+    animation-delay: 2s;
+}
+.heart img:nth-child(2)
+{
+    width: 50px;
+    animation-delay: 6s;
+}
+.heart img:nth-child(3)
+{
+    width: 80px;
+    animation-delay: 4s;
+}
+.heart img:nth-child(4)
+{
+    animation-delay: 8s;
+}
+.heart img:nth-child(5)
+{
+    width: 50px;
+    animation-delay: 7.2s;
+}
+.heart img:nth-child(6)
+{
+    width: 80px;
+    animation-delay: 3s;
+}
+.heart img:nth-child(7)
+{
+    animation-delay: 5s;
+}
+.heart img:nth-child(8)
+{
+    width: 50px;
+    animation-delay: 9s;
+}
+.heart img:nth-child(9)
+{
+    width: 80px;
+    animation-delay: 6s;
+}
+.heart img:nth-child(10)
+{
+    animation-delay: 3s;
+}
+.heart img:nth-child(11)
+{
+    width: 50px;
+    animation-delay: 1s;
+}
+.heart img:nth-child(12)
+{
+    width: 80px;
+    animation-delay: 2s;
+}
+@media screen and (max-width: 600px) {
+    h1{font-size: 36px; line-height: 50px;}
+    
+    .side-bar{
+    width: 100%;
+    height: 50px;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    }
+    .social-links{
+        width: auto;
+        
+        position: unset;
+        
+        transform: none;
+    }
+    .useful-links{
+        width: auto;
+        position: unset;
+    }
+    .menu{
+        width: 18px;
+        margin:0;
+    }
+    .hero{
+    background-image: url(/ParallaxImg/tom-jerry-hugs-512x512.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    } 
+    .heart
+    {
+        width: 100px;    
+    }
+
+}
